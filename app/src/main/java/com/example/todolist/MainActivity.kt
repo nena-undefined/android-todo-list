@@ -8,8 +8,6 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    val toDoList: String = ""
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         val toDoContent = findViewById<EditText>(R.id.editTextToDo)
         val content = toDoContent.text.toString()
 
-        val textView = findViewById<TextView>(R.id.textView)
-        textView.text = textView.text.toString() + content + "\n"
     }
+
+
 
 }
